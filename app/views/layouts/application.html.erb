@@ -9,14 +9,18 @@
     config/locales/en.yml. For more see:
     https://github.com/calebthompson/title#usage
   %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
   <title><%= title %></title>
   <%= stylesheet_link_tag :application, media: "all" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="<%= body_class %>">
-  <%= render "flashes" -%>
+<body>
+<div class= "container">
+  
+
+
   <%= yield %>
-  <%= render "javascript" %>
-  <%= render "css_overrides" %>
+</div>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-	root "currencies#show", id: "bitcoin"
+	root "currencies#show"
 
 	resources :currencies, only: :show
 end

@@ -24,6 +24,7 @@ gem "suspenders"
 gem "title"
 gem "uglifier"
 gem 'pg', '~> 0.18'
+gem 'rest-client'
 
 
 group :development do
@@ -46,7 +47,7 @@ group :development, :test do
 end
 
 group :test do
-  # gem "capybara-webkit"
+  gem "capybara-webkit"
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"

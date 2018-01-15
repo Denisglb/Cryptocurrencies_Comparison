@@ -12,7 +12,6 @@ gem "delayed_job_active_record"
 gem "flutie"
 gem "honeybadger"
 gem "jquery-rails"
-gem "pg"
 gem "puma"
 gem "rack-canonical-host"
 gem "rails", "~> 5.1.3"
@@ -24,6 +23,7 @@ gem "sprockets", ">= 3.0.0"
 gem "suspenders"
 gem "title"
 gem "uglifier"
+gem 'pg', '~> 0.18'
 
 
 group :development do
@@ -39,14 +39,14 @@ group :development, :test do
   gem "bullet"
   gem "bundler-audit", ">= 0.5.0", require: false
   gem "dotenv-rails"
-  gem "factory_girl_rails"
+  gem "factory_bot"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.6"
 end
 
 group :test do
-  gem "capybara-webkit"
+  # gem "capybara-webkit"
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"

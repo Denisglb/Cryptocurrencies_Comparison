@@ -3,3 +3,4 @@
 <a class="btn btn-primary" href=<%= currency_path('Bitcoin') %> role="button"> Bitcoin</a>
 <a class="btn btn-primary" href=<%= currency_path('Etherum') %> role="button"> Etherum</a>
 <a class="btn btn-primary" href=<%= currency_path('Nasdaq') %> role="button"> Nasdaq</a>
+<%= link_to_if(params[:id], "Graph of #{params[:id]}", "https://en.wikipedia.org/wiki/#{params[:id]}") %>

@@ -40,14 +40,15 @@ group :development, :test do
   gem "bullet"
   gem "bundler-audit", ">= 0.5.0", require: false
   gem "dotenv-rails"
-  gem "factory_bot"
+  gem "factory_bot_rails", "~> 4.0"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.6"
 end
 
 group :test do
-  gem "capybara-webkit"
+  gem 'capybara', '~> 2.8.0'
+  gem 'capybara-webkit', '~> 1.11', '>= 1.11.1'
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"

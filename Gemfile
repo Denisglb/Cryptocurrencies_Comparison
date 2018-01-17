@@ -40,7 +40,7 @@ group :development, :test do
   gem "bullet"
   gem "bundler-audit", ">= 0.5.0", require: false
   gem "dotenv-rails"
-  gem "factory_bot_rails", "~> 4.0"
+  gem "factory_bot_rails"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.6"
@@ -57,6 +57,7 @@ group :test do
   gem "timecop"
   gem "webmock"
 end
+
 
 group :production do
   gem "rack-timeout"

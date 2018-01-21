@@ -34,3 +34,12 @@ you can deploy to staging and production with:
 
     % ./bin/deploy staging
     % ./bin/deploy production
+
+
+Git clone
+bundle install
+check if capybara webkit is intsalled properly if not follow instructions https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
+db:create
+db:migrate
+rails s
+rspec

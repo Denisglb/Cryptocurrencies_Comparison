@@ -1,45 +1,32 @@
-# Cryptocurrencies graph
+# Graphical representation of the values of Bitcoin, Ethereum and Nasdaq.
 
 ## Getting Started
 
-After you have cloned this repo, run this setup script to set up your machine
-with the necessary dependencies to run and test this app:
+After you have cloned this repo, run bundle install
 
-    % ./bin/setup
+    % bundle install
 
-It assumes you have a machine equipped with Ruby, Postgres, etc. If not, set up
-your machine with [this script].
+It assumes you have a machine equipped with Ruby, Postgres, etc. If capybara webkit is not installed properly follow the instructions on [this link].
 
-[this script]: https://github.com/thoughtbot/laptop
+[this link]: https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
 
-After setting up, you can run the application using [Heroku Local]:
+After setting up, create a database and migrate it
 
-    % heroku local
+	% rails db:create
+	% rails db:migrate
+	% rials s
 
-[Heroku Local]: https://devcenter.heroku.com/articles/heroku-local
+After setting up, visit you [local host]:
 
-## Guidelines
+[local host]: http://localhost:3000/
 
-Use the following guides for getting things done, programming well, and
-programming in style.
+## Overview
 
-* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
-* [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
-* [Style](http://github.com/thoughtbot/guides/blob/master/style)
-
-## Deploying
-
-If you have previously run the `./bin/setup` script,
-you can deploy to staging and production with:
-
-    % ./bin/deploy staging
-    % ./bin/deploy production
+A web application visualizing the value of three currencies: BitCoin (BTC), Ethereum (ETH) and Nasdaq. Build with Ruby Rails framework and HighCharts JavaScript library for the graphs.
 
 
-Git clone
-bundle install
-check if capybara webkit is intsalled properly if not follow instructions https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
-db:create
-db:migrate
-rails s
-rspec
+## Running Tests
+
+Run rspec in terminal
+
+All the tests are passing with 100% coverage

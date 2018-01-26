@@ -1,6 +1,7 @@
 module CurrencyClient
+  
   def self.get_bitcoins
-    get_currencies(APP_CONFIG.fetch('bitcoin_api_url'))
+    get_currencies('https://min-api.cryptocompare.com/data/histoday?fsym=BTC&tsym=USD&limit=60&aggregate=1&e=CCCAGG')
   end
 
   def self.get_ethereums
@@ -21,8 +22,8 @@ module CurrencyClient
 private
 
   def self.get_currencies(api_url)
-    json_response = get_json_response(api_url)
-    json_response['Data'].inject({}) do |new_element, current_element|
+      json_response = get_json_response(api_url)
+      json_response['Data'].inject({}) do |new_element, current_element|
       key = DateTime.strptime(current_element['time'].to_s, '%s')
       value = current_element['close']
       new_element[key] = value

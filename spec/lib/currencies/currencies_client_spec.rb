@@ -17,6 +17,7 @@ describe CurrencyClient do
     end
   end
 
+
   private
 
     def expect_successful_response(currency, date, value)
